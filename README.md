@@ -15,8 +15,9 @@ In this case I found out that the robots.txt file is ordering the search engine 
 Disallow: /backup`
 
 I then used then the `/backup'` found in the text file and appended it at the end of the website url, similarly to how I first appended the `/robots.txt`, leading me to a file named ProductTemplate.java.bak.
-This file 'https://0a6200c903dea49f812e3efd00ad0096.web-security-academy.net/backup/ProductTemplate.java.bak' is leaking some source in the java language, which could be reported as a bug.
+This file in `https://0a6200c903dea49f812e3efd00ad0096.web-security-academy.net/backup/ProductTemplate.java.bak` is leaking some source in the java language, which could be reported as a bug.
 After reading and analizing the rest of the code in order to find more sensitive informations, a particular section gained my attention:
+
 `ConnectionBuilder connectionBuilder = ConnectionBuilder.from(
                 "org.postgresql.Driver",
                 "postgresql",
