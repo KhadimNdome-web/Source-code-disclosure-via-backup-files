@@ -29,4 +29,5 @@ After reading and analizing the rest of the code in order to find more sensitive
         ).withAutoCommit();
         try`
 
-The code shows a connection trying to be established sending data to a domain named `org.postgresql.Driver`. Not knowing what PostgreSQL is, i researched into it to find out it´s a type of database engine, that in this case is sent to `localhost` and indicating the port `5432`, followes supposedly by a username and database name respectively("postgres"), and finally something that semems to be a password (``reb1t152594ghdd0ym2muvcjuxphmkfy`), revealing other sensitive informations in the database that could be accessed by external malicious actors.
+The code shows a connection trying to be established sending data to a domain named `org.postgresql.Driver`. 
+Not knowing what PostgreSQL is, i researched into it to find out it´s a type of database engine, that in this case is sent to `localhost` and indicating the port `5432`, followes supposedly by a username and database name respectively("postgres"), and finally something that semems to be a password (``reb1t152594ghdd0ym2muvcjuxphmkfy`), revealing other sensitive informations in the database that could be accessed by external malicious actors.
